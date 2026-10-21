@@ -432,8 +432,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Formulário demonstrativo: abre WhatsApp com a reserva preenchida.
-    // IMPORTANTE: substitua o número abaixo pelo WhatsApp real da pizzaria, com código do país e DDD.
-    const WHATSAPP_NUMBER = '5511000000000';
+    const WHATSAPP_NUMBER = '5511911283300';
     const form = document.getElementById('reservationForm');
     const toast = document.getElementById('toast');
     function showToast(message){
@@ -444,7 +443,7 @@
     form.addEventListener('submit',event=>{
       event.preventDefault();
       if(!form.reportValidity()) return;
-      if(WHATSAPP_NUMBER === '5511000000000'){
+      if(WHATSAPP_NUMBER === '5511911283300'){
         showToast('Antes de publicar, troque WHATSAPP_NUMBER no JavaScript pelo WhatsApp real da pizzaria.');
         return;
       }
