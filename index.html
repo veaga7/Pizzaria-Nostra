@@ -459,7 +459,7 @@
         'Ocasião: '+data.get('ocasiao'),
         'Observações: '+(data.get('observacoes')||'Nenhuma')
       ].join('\n');
-      window.open('https://wa.me/'+11911283300+'?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
+      window.open('https://wa.me/11911283300'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
     });
 
     // Animações suaves ao rolar, com fallback para navegadores sem IntersectionObserver.
